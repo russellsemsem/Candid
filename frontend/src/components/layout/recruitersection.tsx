@@ -5,7 +5,7 @@ export default function RecruiterSection() {
     return (
         <main className={styles.main}>
             <div className={styles.recruiterContainer}>
-                <p className={styles.text}>Can't spell candidates without Candid.</p>
+                <p className={styles.text}>Can&apos;t spell candidates without Candid.</p>
                 <p className={styles.text}>Find your next hire through Recruiter View.</p>
                 <RecruiterSignupButton className={styles.recruiterbutton}/>
             </div>

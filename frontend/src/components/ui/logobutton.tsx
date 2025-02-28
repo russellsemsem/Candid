@@ -32,7 +32,7 @@ const LogoButton: React.FC<LogoButtonProps> = ({ onClick, className }) => {
     
     return (
         <button
-        onClick={onClick}
+        onClick={handleClick}
         className={`logo-button ${className || ''}`}
         style={{
             backgroundColor: 'transparent',
