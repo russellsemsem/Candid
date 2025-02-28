@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <main>
         <Hero/>
+        <RecruiterSection/>
       </main>
     </div>
   );

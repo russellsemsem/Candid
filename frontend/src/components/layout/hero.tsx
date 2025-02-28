@@ -1,15 +1,14 @@
+import styles from '@/styles/hero.module.scss';
 import JoinButton from "@/components/ui/joinbutton";
-import '@/styles/hero.scss';
+
 export default function Hero() {
     return (
-        <main>
-
-            <div className="middle-container">
-                <p>Where Authenticity Meets Talent.</p>
-                <p>The casual networking platform.</p>
-                <JoinButton className="hero-join-button"/>
+        <main className={styles.main}>
+            <div className={styles.middleContainer}>
+                <p className={styles.text}>Where Authenticity Meets Talent.</p>
+                <p className={styles.text}>The casual networking platform.</p>
+                <JoinButton className={styles.heroJoinButton}/>
             </div>
-
         </main>
     );
 }

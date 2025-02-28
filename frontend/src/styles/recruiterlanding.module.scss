@@ -1,0 +1,106 @@
+// .main {
+//     min-height: 80vh;
+
+//     background-color: #EEC05D;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     border-radius: 100px 100px 0 0 ;
+// }
+
+.main {
+    min-height: 100vh;
+    
+    background: linear-gradient(
+        to top,
+        #EEC05D 70%,    /* Start with solid yellow at the bottom 70% */
+        rgba(238, 192, 93, 0)  /* Fade to completely transparent */
+    );
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px 20px 0 0;  /* Keep your rounded top corners */
+}
+
+.recruiterContainer{
+    display: flex;
+    text-align: center;
+}
+
+.recruiterContainer {
+    flex-direction: column;
+}
+
+.benefitsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 15vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    font-size: 1.1rem;
+    color: #333;
+    border: 1px solid #f0f0f0;
+}
+
+.benefitsContainer > ul {
+    margin-top: 1.5rem;
+    list-style-type: none;
+    padding-left: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.benefitsContainer > ul > li {
+    padding: 0.75rem 0;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid #f5f5f5;
+    width: 100%;
+}
+
+/* Remove border from last item */
+.benefitsContainer > ul > li:last-child {
+    border-bottom: none;
+}
+
+/* Create custom checkmark bullets */
+.benefitsContainer > ul > li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #EEC05D; /* Your brand yellow color */
+    font-weight: bold;
+}
+
+/* Title styling */
+.benefitsContainer:first-child {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.benefitsTitle {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+    border-bottom: 2px solid #EEC05D;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.recruiterbutton {
+    margin-top: 2rem;
+}
+
+.text {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
